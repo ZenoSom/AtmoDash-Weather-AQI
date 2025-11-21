@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>𝔇𝔶𝔫𝔞𝔪𝔦𝔠 𝔇𝔞𝔰𝔥</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="bg-wrap">
+    <video id="bg-video" autoplay muted loop playsinline></video>
+    <div id="bg-overlay"></div>
+  </div>
+
+  <header class="app-header">
+    <h1>𝘼𝙩𝙢𝙤𝘿𝙖𝙨𝙝 — Weather & AQI</h1>
+    <p class="sub">𝔇𝔶𝔫𝔞𝔪𝔦𝔠 𝔇𝔞𝔰𝔥
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      z̷̛̻̤̯̥̝͎̯͚̹͇͗̆̄̈́̅̎̓̿̎͋́̅̈́̚͜ë̸͓̮͉͈͇͍̖͎̩̞͈́́́̋̇̾͋̈́̾͆͑͘͘͜͠͝ǹ̷̨͍̮̥̹̘͙̗̻̬̬̜̥̮̃̒̈́̽͗̿̍̄̂̏͆͠͝ŏ̸̡̼̺̫̥̻͈̞̍͆̏̓́͜͝ͅ
+    </p>
+  </header>
+
+  <main class="app">
+    <section class="search">
+      <input id="cityInput" placeholder="Type city, e.g., Delhi" />
+      <button id="searchBtn">Search</button>
+      <select id="unitsSelect" title="Units">
+        <option value="metric">°C</option>
+        <option value="imperial">°F</option>
+      </select>
+    </section>
+
+    <section class="cards">
+      <div class="card large">
+        <div class="card-content">
+          <h2 id="cityName">—</h2>
+          <div class="temp-aqi">
+            <div class="temp">
+              <div id="temp">--</div>
+              <div id="condition">--</div>
+            </div>
+            <div class="aqi">
+              <div class="aqi-value" id="aqi">--</div>
+              <div class="aqi-text" id="aqiText">--</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Humidity</h3>
+        <p id="humidity">--</p>
+      </div>
+
+      <div class="card">
+        <h3>Wind</h3>
+        <p id="wind">--</p>
+      </div>
+
+      <div class="card">
+        <h3>Pressure</h3>
+        <p id="pressure">--</p>
+      </div>
+    </section>
+
+    <section class="log">
+      <h3>System Log</h3>
+      <div id="logBox"></div>
+    </section>
+
+    <footer class="footer">
+      <small>Made with ❤️ZenoSOM $ Happy ("Thinking hardware" ) <code>//</code>.</small>
+    </footer>
+
+    <!-- SOCIAL ICONS -->
+    <div class="social-footer">
+      <a href="https://www.linkedin.com/in/somnath-singh-zeno2006" target="_blank">
+        <img src="icons/linkedin.png" alt="LinkedIn">
+      </a>
+
+      <a href="https://github.com/ZenoSom" target="_blank">
+        <img src="icons/github.png" alt="GitHub">
+      </a>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

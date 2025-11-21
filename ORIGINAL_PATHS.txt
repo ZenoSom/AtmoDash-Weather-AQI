@@ -1,0 +1,7 @@
+Original user-uploaded files (available in session):
+- /mnt/data/index.html
+- /mnt/data/style.css
+- /mnt/data/script.js
+- /mnt/data/README.md
+
+You can inspect or reuse them when integrating into this package.

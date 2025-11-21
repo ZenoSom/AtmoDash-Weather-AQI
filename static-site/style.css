@@ -1,0 +1,143 @@
+/* RESET MAIN BACKGROUND SO VIDEO IS VISIBLE */
+body {
+  background: transparent !important;
+}
+
+
+/* VIDEO BACKGROUND */
+#bg-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease;
+  opacity: 1;
+  z-index: 0;
+}
+
+/* OVERLAY (KEPT BUT MADE LIGHTER) */
+#bg-overlay {
+  display: none !important;
+}
+
+
+
+/* HEADER & APP CONTENT */
+.app-header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 30px 20px 0;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.app {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 20px;
+}
+
+/* Search Bar */
+.search {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.search input {
+  width: 360px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  color: inherit;
+  backdrop-filter: blur(6px);
+}
+
+.search button {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #e45913, #7ee7ff);
+  color: #021;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 280px 170px 170px;
+  gap: 18px;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+}
+
+.card.large {
+  min-height: 180px;
+}
+
+/* LOG BOX */
+#logBox {
+  background: rgba(255,255,255,0.03);
+  padding: 12px;
+  border-radius: 10px;
+  min-height: 120px;
+  max-height: 160px;
+  overflow: auto;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 12px;
+  text-align: center;
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+  padding-bottom: 30px;
+}
+/* SOCIAL ICON FOOTER */
+.social-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px 0 60px 0;
+  position: relative;
+  z-index: 3;
+}
+
+.social-footer img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgba(255,255,255,0.4));
+  transition: transform 0.25s ease;
+}
+
+.social-footer img:hover {
+  transform: scale(1.18);
+}
+
